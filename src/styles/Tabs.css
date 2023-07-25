@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+#Tabs{
+ 
+    height: auto;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.tabsV2Container{
+    
+    padding: 1rem;
+    border-radius: 5px;
+   
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+
+.btnContainer{
+    display: flex;
+    color: rgb(44, 44, 44);
+    border-bottom: 1px solid #e7e8f8;
+   
+    cursor: pointer;
+    
+}
+
+.tabs{
+    color: rgb(44, 44, 44);
+    background: none;
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    font: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+
+.activeTab{
+    color: crimson;
+    border-bottom: 3px solid crimson;
+}
