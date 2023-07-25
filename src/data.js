@@ -32,7 +32,7 @@ const people = [
     {
         id: 4,
         image: image4,
-        name: "Kashaan Iqeel",
+        name: "Kashan Aqeel",
         title: "UX Review Presentation",
         quote:
             "How do you create compelling presentations that wow your colleagues and awarded by the company",

@@ -8,178 +8,90 @@ import img4 from '../images/img4.jpg';
 import img5 from '../images/img5.jpg';
 import img6 from '../images/img6.jpg';
 import img8 from '../images/img8.jpg';
+import Rating from '../components/Rating/Ratings';
 
 
 const All_Categories = () => {
+  const cards = [
+    {
+      imgSrc: img1,
+      title: 'How to Clean the Filter All parts Checking on your air conditioner',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque amet animi deleniti fuga et quo numquam, ullam sint magni exercitationem ab nihil ipsam quam omnis aliquam ea quod odit! Ea!',
+      rating: 4, // Replace this with the actual rating for the first card
+    },
+    {
+      imgSrc: img2,
+      title: 'How to Clean the Filter All parts Checking on your air conditioner',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque amet animi deleniti fuga et quo numquam, ullam sint magni exercitationem ab nihil ipsam quam omnis aliquam ea quod odit! Ea!',
+      rating: 4, // Replace this with the actual rating for the first card
+    },
+    {
+      imgSrc: img3,
+      title: 'How to Clean the Filter All parts Checking on your air conditioner',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque amet animi deleniti fuga et quo numquam, ullam sint magni exercitationem ab nihil ipsam quam omnis aliquam ea quod odit! Ea!',
+      rating: 3, // Replace this with the actual rating for the first card
+    },
+    {
+      imgSrc: img4,
+      title: 'How to Clean the Filter All parts Checking on your air conditioner',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque amet animi deleniti fuga et quo numquam, ullam sint magni exercitationem ab nihil ipsam quam omnis aliquam ea quod odit! Ea!',
+      rating: 1, // Replace this with the actual rating for the first card
+    },
+    {
+      imgSrc: img5,
+      title: 'How to Clean the Filter All parts Checking on your air conditioner',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque amet animi deleniti fuga et quo numquam, ullam sint magni exercitationem ab nihil ipsam quam omnis aliquam ea quod odit! Ea!',
+      rating: 5, // Replace this with the actual rating for the first card
+    },
+    {
+      imgSrc: img6,
+      title: 'How to Clean the Filter All parts Checking on your air conditioner',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque amet animi deleniti fuga et quo numquam, ullam sint magni exercitationem ab nihil ipsam quam omnis aliquam ea quod odit! Ea!',
+      rating: 4, // Replace this with the actual rating for the first card
+    },
+    {
+      imgSrc: img8,
+      title: 'How to Clean the Filter All parts Checking on your air conditioner',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque amet animi deleniti fuga et quo numquam, ullam sint magni exercitationem ab nihil ipsam quam omnis aliquam ea quod odit! Ea!',
+      rating: 2, // Replace this with the actual rating for the first card
+    },
+   ];
   return (
-    <section id='Categories'>
-
-      <div className="CardContainer">
-
-        <div className="card">
+    <section id="Categories">
+    <div className="CardContainer">
+      {cards.map((card, index) => (
+        <div key={index} className="card">
           <div className="cardimg">
-            <img src={img1} alt="" />
+            <img src={card.imgSrc} alt="" />
           </div>
 
           <div className="cardDetails">
-            <h1>How to Clean the Filter All parts Checking on your air conditioner</h1>
-            <p style={{ position: 'relative', top: '20px', left: '10px', textAlign: 'justify', width: '315px' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque amet animi deleniti fuga et quo numquam, ullam sint magni exercitationem ab nihil ipsam quam omnis aliquam ea quod odit! Ea!</p>
+            <h1>{card.title}</h1>
+            <p style={{ position: 'relative', top: '20px', left: '10px', textAlign: 'justify', width: '315px' }}>
+            <Rating rating={card.rating} /> {/* Add the Rating component with the rating */}
+              {card.description}
+            </p>
 
-            <div className='btn1'>
-
-              <button>Read More <AiOutlineArrowRight id='arrow' /></button>
-
+            
+            
+            <div className="btn1">
+              <button>
+                Read More <AiOutlineArrowRight id="arrow" />
+              </button>
             </div>
-
-
           </div>
-
-
-
-
         </div>
-
-        <div className="card">
-          <div className="cardimg">
-            <img src={img2} alt="" />
-          </div>
-
-          <div className="cardDetails">
-            <h1>How to Clean the Filter All parts Checking on your air conditioner</h1>
-            <p style={{ position: 'relative', top: '20px', left: '10px', textAlign: 'justify', width: '315px' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque amet animi deleniti fuga et quo numquam, ullam sint magni exercitationem ab nihil ipsam quam omnis aliquam ea quod odit! Ea!</p>
-
-            <div className='btn1'>
-
-              <button>Read More <AiOutlineArrowRight id='arrow' /></button>
-
-            </div>
-
-
-          </div>
-
-
-
-
-        </div>
-
-        <div className="card">
-          <div className="cardimg">
-            <img src={img3} alt="" />
-          </div>
-
-          <div className="cardDetails">
-            <h1>How to Clean the Filter All parts Checking on your air conditioner</h1>
-            <p style={{ position: 'relative', top: '20px', left: '10px', textAlign: 'justify', width: '315px' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque amet animi deleniti fuga et quo numquam, ullam sint magni exercitationem ab nihil ipsam quam omnis aliquam ea quod odit! Ea!</p>
-
-            <div className='btn1'>
-
-              <button>Read More <AiOutlineArrowRight id='arrow' /></button>
-
-            </div>
-
-
-          </div>
-
-
-
-
-        </div>
-
-        <div className="card">
-          <div className="cardimg">
-            <img src={img4} alt="" />
-          </div>
-
-          <div className="cardDetails">
-            <h1>How to Clean the Filter All parts Checking on your air conditioner</h1>
-            <p style={{ position: 'relative', top: '20px', left: '10px', textAlign: 'justify', width: '315px' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque amet animi deleniti fuga et quo numquam, ullam sint magni exercitationem ab nihil ipsam quam omnis aliquam ea quod odit! Ea!</p>
-
-            <div className='btn1'>
-
-              <button>Read More <AiOutlineArrowRight id='arrow' /></button>
-
-            </div>
-
-
-          </div>
-
-
-
-
-        </div>
-
-        <div className="card">
-          <div className="cardimg">
-            <img src={img5} alt="" />
-          </div>
-
-          <div className="cardDetails">
-            <h1>How to Clean the Filter All parts Checking on your air conditioner</h1>
-            <p style={{ position: 'relative', top: '20px', left: '10px', textAlign: 'justify', width: '315px' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque amet animi deleniti fuga et quo numquam, ullam sint magni exercitationem ab nihil ipsam quam omnis aliquam ea quod odit! Ea!</p>
-
-            <div className='btn1'>
-
-              <button>Read More <AiOutlineArrowRight id='arrow' /></button>
-
-            </div>
-
-
-          </div>
-
-
-
-
-        </div>
-
-        <div className="card">
-          <div className="cardimg">
-            <img src={img6} alt="" />
-          </div>
-
-          <div className="cardDetails">
-            <h1>How to Clean the Filter All parts Checking on your air conditioner</h1>
-            <p style={{ position: 'relative', top: '20px', left: '10px', textAlign: 'justify', width: '315px' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque amet animi deleniti fuga et quo numquam, ullam sint magni exercitationem ab nihil ipsam quam omnis aliquam ea quod odit! Ea!</p>
-
-            <div className='btn1'>
-
-              <button>Read More <AiOutlineArrowRight id='arrow' /></button>
-
-            </div>
-
-
-          </div>
-
-
-
-
-        </div>
-
-        <div className="card">
-          <div className="cardimg">
-            <img src={img8} alt="" />
-          </div>
-
-          <div className="cardDetails">
-            <h1>How to Clean the Filter All parts Checking on your air conditioner</h1>
-            <p style={{ position: 'relative', top: '20px', left: '10px', textAlign: 'justify', width: '315px' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque amet animi deleniti fuga et quo numquam, ullam sint magni exercitationem ab nihil ipsam quam omnis aliquam ea quod odit! Ea!</p>
-
-            <div className='btn1'>
-
-              <button>Read More <AiOutlineArrowRight id='arrow' /></button>
-
-            </div>
-
-
-          </div>
-
-
-
-
-        </div>
-
-      </div>
-    </section>
-  )
-}
-
-export default All_Categories
+      ))}
+    </div>
+  </section>
+);
+};
+
+export default All_Categories;

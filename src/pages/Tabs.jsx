@@ -9,7 +9,6 @@ const Tabs = () => {
     const [isActive, setIsActive] = useState(1);
     const handleActive = (btn) => setIsActive(btn);
 
-
     return (
         <section id='Tabs'>
             <div className="tabsV2Container">
